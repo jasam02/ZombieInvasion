@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SFML_DIR "C:/Libraries/SFML-3.0.2/lib/cmake/SFML")
 
-find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System)
+find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System Audio)
 
 add_executable(ZombieInvasion main.cpp)
 
@@ -13,6 +13,7 @@ target_link_libraries(ZombieInvasion
     SFML::Graphics
     SFML::Window
     SFML::System
+    SFML::Audio
 )
 
 add_custom_command(TARGET ZombieInvasion POST_BUILD

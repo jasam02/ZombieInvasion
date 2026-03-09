@@ -3,7 +3,13 @@
     "allow": [
       "Bash(python3 -c \":*)",
       "Bash(python -c \":*)",
-      "Bash(sort -t/ -k1,1 -k2,2 -k3,3)"
+      "Bash(sort -t/ -k1,1 -k2,2 -k3,3)",
+      "Bash(python -c \"from PIL import Image; img = Image.open\\(r''C:\\\\Users\\\\some1\\\\Documents\\\\ZombieInvasion\\\\ZombieInvasion\\\\assets\\\\Extra\\\\Background\\\\PNG\\\\Guns\\\\AK-47\\\\Shoot\\\\tile000.png''\\); print\\(img.size\\)\")",
+      "Bash(powershell -command \"Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(''C:\\\\Users\\\\some1\\\\Documents\\\\ZombieInvasion\\\\ZombieInvasion\\\\assets\\\\Extra\\\\Background\\\\PNG\\\\Guns\\\\AK-47\\\\Shoot\\\\tile000.png''\\); Write-Host $img.Width $img.Height; $img.Dispose\\(\\)\")",
+      "Bash(dir \"C:\\\\Users\\\\some1\\\\Documents\\\\ZombieInvasion\\\\ZombieInvasion\\\\assets\\\\Extra\\\\Background\\\\PNG\\\\Guns\\\\AK-47\\\\Reload\" /b /o:s)",
+      "Bash(sort -k5 -n)",
+      "Bash(powershell -Command \"Add-Type -AssemblyName System.Drawing; Get-ChildItem ''C:\\\\Users\\\\some1\\\\Documents\\\\ZombieInvasion\\\\ZombieInvasion\\\\assets\\\\Extra\\\\Background\\\\PNG\\\\Guns\\\\AK-47\\\\Reload'' -Filter *.png | Sort-Object Name | ForEach-Object { try { $img = [System.Drawing.Image]::FromFile\\($_.FullName\\); $out = $_.Name + '': '' + $img.Width + ''x'' + $img.Height; $img.Dispose\\(\\); Write-Output $out } catch { Write-Output \\($_.Name + '': ERROR''\\) } }\")",
+      "Bash(powershell -File:*)"
     ]
   }
 }
