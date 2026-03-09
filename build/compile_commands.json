@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/some1/Documents/ZombieInvasion/ZombieInvasion/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -external:IC:\\Libraries\\SFML-3.0.2\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /FoCMakeFiles\\ZombieInvasion.dir\\main.cpp.obj /FdCMakeFiles\\ZombieInvasion.dir\\ /FS -c C:\\Users\\some1\\Documents\\ZombieInvasion\\ZombieInvasion\\main.cpp",
+  "file": "C:/Users/some1/Documents/ZombieInvasion/ZombieInvasion/main.cpp",
+  "output": "C:/Users/some1/Documents/ZombieInvasion/ZombieInvasion/build/CMakeFiles/ZombieInvasion.dir/main.cpp.obj"
+}
+]
